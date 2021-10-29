@@ -1,4 +1,4 @@
-FROM openjdk as base 
+FROM openjdk:11.0.4-jre-slim-buster as base 
 WORKDIR /app
 COPY . . 
 RUN chmod +x gradlew
